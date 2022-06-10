@@ -18,7 +18,7 @@
                 <td>
                     <ul class="list-inline">
                         <li class="list-inline-item">
-                            <img src="http://localhost:3000/uploads/<%= transaction[i].historyVoucherTopup.thumbnail %>"
+                            <img src="https://store-gg-si.herokuapp.com/uploads/<%= transaction[i].historyVoucherTopup.thumbnail %>"
                                 alt="avatar" width="48" height="48">
                         </li>
                     </ul>
@@ -65,8 +65,8 @@
                             <i class="fas fa-check mr-2"></i>
                             Terima</button>
                     </form>
-                    <form style="display: inline-block;" action="/transaction/delete/<%= transaction[i]._id %>?_method=DELETE"
-                        method="POST">
+                    <form style="display: inline-block;"
+                        action="/transaction/delete/<%= transaction[i]._id %>?_method=DELETE" method="POST">
                         <button class="btn btn-danger btn-sm">
                             <i class="fas fa-trash mr-2"></i>
                             Hapus</button>
